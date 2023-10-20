@@ -1,0 +1,19 @@
+---
+import { slide } from "astro:transitions";
+import { fade } from 'astro:transitions';
+import bgA from "../assets/bgA.png";
+import { Image } from 'astro:assets';
+---
+<div>
+    <div class="flex max-sm:flex-wrap max-xl:flex-wrap ">
+        <div class="px-48 py-32 max-sm:px-16 ">
+            <h1 class="text-7xl font-semibold text-white leading-tight max-sm:text-4xl max-sm:-mt-10  max-xl:text-5xl"><span class="text-purple-400">Building</span> the future of the web3 world, <span class="text-purple-400">one pixel at a time.</span><h1/>
+                <p class="mt-8 text-3xl text-white max-sm:text-xl " >Experience the magic of Hooman Digital</p>
+            <div class="bg-primary w-40 h-12 mt-20  text-black max-sm:mt-6"> 
+            <button type="submit" class="px-12 py-3 text-md font-bold text-base  hover:text-white hover:bg-violet-600 hover:scale-105 transition ease-out duration-500 " >Explore </button>
+            </div>
+        </div>
+        <Image src={bgA} alt="bg" />
+    <div/>
+    
+<div/>

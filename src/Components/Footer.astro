@@ -1,0 +1,91 @@
+---
+import logoA from "../assets/logoA.png";
+import { Image } from 'astro:assets';
+import { PiFacebookLogoBold } from 'react-icons/pi'
+import { PiTwitterLogo } from 'react-icons/pi'
+import { PiInstagramLogoBold } from 'react-icons/pi'
+import { PiYoutubeLogoBold } from 'react-icons/pi'
+---
+<footer class="bg-main mt-44 max-md:mt-24">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <Image src={logoA} alt="logo" class="h-16 mr-3"/>  
+            <p class="text-gray-500 text-lg w-96 mt-2 font-semibold max-sm:text-base">At Hooman Digital, we're more than just a team of digital experts. We're a group of individuals.</p>
+             
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+                      <li >
+                          <a href="/" class="hover:underline">Hire Team</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Jobs</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Brochure</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">FAQs</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Blogs</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-base  font-semibold text-gray-900 uppercase dark:text-white">Services</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+                     <li >
+                          <a href="/" class="hover:underline">UI/UX</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Web Development</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Content Writing</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Partnerships</a>
+                      </li>
+                      <li>
+                          <a href="/" class="hover:underline">Community</a>
+                      </li>
+                     
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">Start a Conversation</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+                      <li >
+                          <a href="#" class="hover:underline ">Hooman Digital</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline ">+91 123-456-0123</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Hooman Digital</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    
+      
+    </div>
+    <div class="sm:flex sm:items-center sm:justify-around dark:bg-gray-900 h-16 ">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023 . All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+            <PiTwitterLogo style={{color:"white"}} size={25}/>
+            <PiFacebookLogoBold style={{color:"white"}} size={25}/>
+            <PiInstagramLogoBold style={{color:"white"}} size={25}/>
+            <PiYoutubeLogoBold style={{color:"white"}} size={25}/>
+          </div>
+      </div>
+</footer>

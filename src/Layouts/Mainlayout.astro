@@ -1,0 +1,37 @@
+---
+interface Props{
+    title:string;
+}
+const {title}=Astro.props as Props
+import Hero from "../Components/Hero.astro"
+import Nav from "../Components/Nav.astro"
+import Footer from "../Components/Footer.astro" 
+import { ViewTransitions } from "astro:transitions";
+import { fade } from "astro:transitions";
+import About1 from "../Components/About1.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+		<title>{title}</title>
+		<ViewTransitions/>
+		<style>
+			body {
+    		font-family: 'Quicksand';font-size: 22px;}
+		</style>
+	</head>	
+	
+	<body>
+		<div class=" bg-main" transition:animate={fade({ duration: '0.9s' })}>
+		<Nav />
+		<Hero/>
+		<About1/>
+		<Footer/>
+		</div>
+	</body>
+</html>

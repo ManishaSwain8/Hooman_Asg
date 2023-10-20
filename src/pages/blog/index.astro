@@ -1,0 +1,37 @@
+---
+import Nav from "../../Components/Nav.astro";
+import Footer from "../../Components/Footer.astro";
+import Card from "../../Components/Card.astro";
+import {getCollection} from "astro:content";
+const posts=await getCollection("posts");
+import { ViewTransitions } from "astro:transitions";
+import { fade } from "astro:transitions";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+		<title>Blogs</title>
+		<ViewTransitions/>
+		<style>
+			body {
+    		font-family: 'Quicksand';font-size: 22px;}
+		</style>
+	</head>
+		
+		
+	<body class="bg-main" >
+		<Nav/>
+		<div class="mt-20"transition:animate={fade({ duration: '0.8s' })} >
+			   <h1 class="  text-5xl  leading-tight text-white font-semibold max-sm:text-4xl max-md:text-center  text-center">WE DO <span class="text-primary">AMAZING</span> THINGS <br/> WITH AMAZING <span class="text-primary">PEOPLE.</span></h1>
+			{posts.map(post=>(
+				<Card posts={posts}/>
+			))}
+		</div>
+		<Footer/>
+	</body>
+</html>

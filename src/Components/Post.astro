@@ -1,0 +1,24 @@
+---
+import type{CollectionEntry} from 'astro:content'
+import { Image } from 'astro:assets';
+import detailimg from "../assets/detailimg.png";
+import { FiArrowUpRight } from 'react-icons/fi';
+
+type Props={
+    post:CollectionEntry<'posts'>;
+};
+const { post}=Astro.props;
+---
+<div class=" rounded-xl  mx-auto  text-white mt-14 max-sm:mt-6">
+    <img src={post.data.img} alt="img" class=" h-auto w-auto rounded-xl  hover:scale-105 transition ease-out duration-50  "/> 
+        <div class="mt-6">
+            <p class="font-semibold text-sm text-gray-400">Updates <span class="text-primary text-sm">{post.data.date}</span></p>
+            <h1 class="text-2xl font-semibold mt-8 text-primary ">{post.data.title}</h1>
+            <p class="text-gray-400 mt-2 text-base">{post.data.des}</p>
+            <div class="border-2 border-gray-500 h-10 w-40 rounded-full mt-6 hover:border-primary hover:bg-primary transition ease-out duration-500">
+            <a  href={`/blog/${post.slug}`}><button  class="px-4 py-1 gap-2 flex text-base "><p >Read More</p> <FiArrowUpRight size={28} style={{padding:"5px"}}/></button></a>
+        </div>   
+    </div>
+</div>
+
+  

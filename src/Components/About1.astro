@@ -1,0 +1,35 @@
+---
+import abb from "../assets/abb.png";
+import ab from "../assets/ab.png";
+import { Image } from 'astro:assets';
+---
+<div class="mt-36 max-sm:mt-10">
+    <div class="flex flex-wrap justify-evenly  mt-40 max-sm:mt-20 max-sm:p-10">
+        <div >
+            <h1 class="text-white text-4xl font-semibold"> ABOUT US</h1>
+            <p class="text-gray-400 text-base mt-10 max-sm:text-sm">
+            At Hooman Digital, we're more than just a team of digital<br/> experts. We're a group of individuals who are passionate<br/> about using our skills and expertiseto help others<br/> succeed. Our team is made up of designers, developers, writers,<br/> marketers, and community builders, each with a unique<br/> perspective and set of skills. We're committed to creating digital<br/> solutions that are authentic, innovative, immersive<br/> and intuitive. Whether we're designing a new website,<br/> developing a brand identity.
+            </p>
+            <div class="bg-primary w-36 h-12 mt-14 text-black max-sm:mt-6 rounded-full  hover:text-white hover:bg-violet-600 hover:scale-105 transition ease-out duration-500"> 
+                <button type="submit" class="px-7 py-3 text-base font-bold " >View More </button>
+            </div>
+        </div>
+          <Image src={ab} alt="bg" class="h-96 max-md:mt-6 " />
+    </div>
+
+    <div class="flex  flex-wrap justify-evenly mt-32 max-sm:p-10 max-sm:mt-20">
+        <Image src={abb} alt="bg" class="h-96 max-lg:hidden  " />
+        <div >
+            <h1 class="text-white text-4xl font-semibold">Brand Experiences</h1>
+            <p class="text-gray-400 text-base mt-8 max-sm:text-sm">
+                Our team of experts specializes in web design & Development, branding,<br/> content creation, UI/UX Design, Community manage, and more.
+            </p>
+             <div class="bg-primary w-36 h-12 mt-14 text-black max-sm:mt-6 rounded-full  hover:text-white hover:bg-violet-600 hover:scale-105 transition ease-out duration-500"> 
+                <button type="submit" class="px-7 py-3 text-base font-bold " >Our Project </button>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</div>

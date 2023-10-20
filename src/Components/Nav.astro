@@ -1,0 +1,37 @@
+---
+import logoA from "../assets/logoA.png";
+import { Image } from 'astro:assets';
+---
+
+<html>
+    <body>
+        <nav aria-label="Primary">
+        <div class=" flex justify-around  text-white h-16  max-md:hidden">
+            <Image src={logoA} alt="logo"/>
+            <ul class="flex gap-12 mt-4 text-base ">
+                <a href="/" class="hover:text-primary">Home</a>
+                <a href="/" class="hover:text-primary">About us</a>
+                <a href="/" class="hover:text-primary">Services</a>
+                <a href="/" class="hover:text-primary">Portfolio</a>
+                <a href="/blog/"class="hover:text-primary">Blogs</a>     
+            </ul>
+            <div class="bg-primary w-36 h-12 mt-2 text-black hover:text-white hover:bg-violet-600 hover:scale-105 transition ease-out duration-500"> 
+            <button type="submit" class="px-9 py-3 font-bold text-sm" >Contact Us  </button>
+            </div>
+        </div>
+        </nav>
+    <nav>
+    <div class=" max-md:block hidden">
+      <div class="flex justify-around ">
+          <Image src={logoA} alt="logo"/>
+          <ul class="flex gap-8 mt-4 text-white text-base hover:text-primary">
+            <a href="/"class="hover:text-primary">Home</a>
+            <a href="/blog/" class="hover:text-primary">Blogs</a>
+            </ul>
+            <div class="bg-primary w-24 h-10 mt-2 text-black"> 
+            <button type="submit" class="px-3 py-2 font-bold text-sm  hover:text-white hover:bg-violet-600 hover:scale-105 transition ease-out duration-500 " >Contact Us  </button>
+        </div>
+      </div>           
+   </div>
+   
+</nav>
