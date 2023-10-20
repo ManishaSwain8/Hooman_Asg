@@ -1,4 +1,6 @@
-#Preveiw :
+## Preveiw :
 
-https://github.com/ManishaSwain8/Hooman_Asg/assets/96622693/239ac2a3-c610-4abd-a64b-93cecbe0eace
+
+
+https://github.com/ManishaSwain8/Hooman_Asg/assets/96622693/dd733eca-a584-43e3-8609-70f6aec30f2b
 
